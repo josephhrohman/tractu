@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  background-repeat: no-repeat;
+  background-position: 100px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: white;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  width: 10vh;
+  margin-left: 1vw;
+}
+
+.nav-logo  {
+  height: 9vh;
+  widows: 9vh;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-link {
+  text-align: center;
+  width: 10vh;
+  margin: 10px;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60vh;
+  background: url(imgs/medicine.jpg) beige;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-blurb {
+  text-align: center;
+  width: 50vw;
+  font-size: 1.8em;
+  color: black;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-block {
+  height: 60vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.main-blurb {
+  font-size: 1em;
+}
+
+.main-divide-1 {
+  background: url(imgs/baby.jpg) beige;
+  height: 60vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-divide-2 {
+  background: url(imgs/chem.jpg) beige;
+  height: 60vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-divide-3 {
+  background: url(imgs/gloves.jpg) beige;
+  height: 60vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+.footer-blurb {
+  font-size: .9em;
+  color: black;
+  margin: 5px;
+}
+
+hr {
+  height: 1em;
+  border: .5px solid black;
+}
