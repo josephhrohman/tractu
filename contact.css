@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Manjari', sans-serif;
 }
 
 body {
-  /* background-color: beige; */
+  background-color: white;
   background-repeat: no-repeat;
   background-position: 100px;
 }
@@ -20,12 +21,14 @@ nav {
 }
 
 .nav-left {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 10vh;
-  width: 10vh;
+  width: 50vh;
   margin-left: 1vw;
+  font-size: 2em;
 }
 
 .nav-logo  {
@@ -50,22 +53,33 @@ nav {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 60vh;
-  background: url(imgs/medicine.jpg) beige;
+  opacity: 0.8;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
+  background: url(imgs/labwork.jpg) beige;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header-blurb {
-  text-align: center;
   width: 50vw;
+  margin-left: 20vw;
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+}
+
+.header-content {
+  width: 30vw;
+  margin-left: 20vw;
   font-size: 1.8em;
-  color: black;
+  font-weight: 900;
+  color: white;
 }
 
 /* Main */
@@ -75,45 +89,13 @@ main {
   flex-direction: column;
 }
 
-.main-block {
-  height: 60vh;
-  width: 100vw;
-  background-color: white;
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
 }
 
-.main-blurb {
-  font-size: 1em;
-}
 
-.main-divide-1 {
-  background: url(imgs/baby.jpg) beige;
-  height: 60vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.main-divide-2 {
-  background: url(imgs/chem.jpg) beige;
-  height: 60vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: noa-repeat;
-  background-size: cover;
-}
-
-.main-divide-3 {
-  background: url(imgs/gloves.jpg) beige;
-  height: 60vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Footer */
 
@@ -135,15 +117,4 @@ footer {
 hr {
   height: 1em;
   border: .5px solid black;
-}
-
-
-.test {
-  height: 100vh;
-  width: 100VW;
-}
-
-.particle {
-  position: absolute;
-  border-radius: 50%;
 }
