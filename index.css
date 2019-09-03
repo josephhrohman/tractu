@@ -25,6 +25,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: center;
   height: 10vh;
   width: 50vh;
   margin-left: 1vw;
@@ -36,17 +37,39 @@ nav {
   widows: 9vh;
 }
 
+.nav-name {
+  color: black;
+  margin: 1.5vh 0 0 0;
+}
+
+.nav-name:hover {
+  color: #4f81bd;
+  transition: color .15s linear;
+}
+
 .nav-right {
   display: flex;
   flex-direction: row;
-  align-items: center;
   height: 10vh;
 }
 
 .nav-link {
+  text-decoration: none;
   text-align: center;
-  width: 10vh;
-  margin: 10px;
+  font-size: 1.2em;
+  height: 10vh;
+  margin: 4.5vh 15px;
+  color: black;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2em;
+  height: 10vh;
+  margin: 4.5vh 15px;
+  color: #4f81bd;
+  transition: color .15s linear;
 }
 
 /* Header */
@@ -92,7 +115,7 @@ main {
 }
 
 .main-divide-1 {
-  background: url(imgs/baby.jpg) beige;
+  background: url(imgs/gloves.jpg) beige;
   height: 60vh;
   width: 100vw;
   background-attachment: fixed;
@@ -111,15 +134,6 @@ main {
   background-size: cover;
 }
 
-.main-divide-3 {
-  background: url(imgs/gloves.jpg) beige;
-  height: 60vh;
-  width: 100vw;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* Footer */
 
