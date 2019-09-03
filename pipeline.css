@@ -57,10 +57,11 @@ header {
   align-items: center;
   width: 100vw;
   height: 60vh;
-  opacity: 0.7;
-  background: url(imgs/medicine.jpg) beige;
+  opacity: 0.8;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
+  background: url(imgs/analysis.jpg) beige;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 0 -40vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -70,7 +71,7 @@ header {
   width: 50vw;
   font-size: 3em;
   font-weight: 900;
-  color: black;
+  color: white;
 }
 
 /* Main */
@@ -78,4 +79,158 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.pipeline-chart {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.chart-left {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0 0 0;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+}
+
+.cat1 {
+  border: 1px solid black;
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+
+.cat2 {
+  border: 1px solid black;
+  transform: rotate(-90deg);
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  align-items: center
+}
+
+.cat3 {
+  border: 1px solid black;
+  transform: rotate(-90deg);
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  align-items: center
+}
+
+.product, product-des {
+  display: flex;
+  flex-direction: column;
+}
+
+.indv {
+  border: 1px solid black;
+  height: 40px;
+  width: 200px;
+}
+
+.indiv-des {
+  border: 1px solid black;
+  height: 40px;
+  width: 300px;
+}
+
+
+.chart-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-cat {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+}
+
+.animated-graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar1 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.bar2 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar3 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar4 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar5 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar6 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar7 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+.bar8 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+.footer-blurb {
+  font-size: .9em;
+  color: black;
+  margin: 5px;
+}
+
+hr {
+  height: 1em;
+  border: .5px solid black;
 }

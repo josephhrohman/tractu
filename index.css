@@ -57,7 +57,8 @@ header {
   align-items: center;
   width: 100vw;
   height: 60vh;
-  opacity: 0.7;
+  opacity: 0.8;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
   background: url(imgs/medicine.jpg) beige;
   background-attachment: fixed;
   background-position: center;
@@ -70,7 +71,7 @@ header {
   width: 50vw;
   font-size: 3em;
   font-weight: 900;
-  color: black;
+  color: white;
 }
 
 /* Main */
