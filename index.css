@@ -90,12 +90,31 @@ header {
   background-size: cover;
 }
 
+.header-block {
+  display: flex;
+  align-items: center;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  height: 300px;
+  width: 600px;
+}
+
 .header-blurb {
+  animation: fade-in-move-down 1s;
   text-align: center;
-  width: 50vw;
   font-size: 3em;
   font-weight: 900;
   color: white;
+}
+
+@keyframes fade-in-move-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Main */
