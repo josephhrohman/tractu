@@ -75,21 +75,6 @@ nav {
 
 /* Header */
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
-  height: 60vh;
-  opacity: 0.8;
-  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
-  background: url(imgs/labwork.jpg) beige;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .header-blurb {
   width: 50vw;
   margin-left: 20vw;
@@ -111,12 +96,93 @@ header {
 main {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  opacity: 0.8;
+  height: 80vh;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
+  background: url(imgs/labwork.jpg) beige;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-info {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.contact-title {
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+}
+
+.contact-email {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: white;
+}
+
+.contact-number {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: white;
 }
 
 .form-group{
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   width: 50vw;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px 0px #BABABA;
+}
+
+.form-header {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.form-text {
+  font-size: 1em;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form-name {
+  height: 40px;
+  width: 300px;
+  margin: 5px;
+}
+
+.form-info {
+  height: 40px;
+  width: 300px;
+  margin: 5px;
+}
+
+.form-message {
+  height: 100px;
+  width: 619px;
+  margin: 5px;
+}
+
+.form-submit {
+  height: 20px;
+  width: 80px;
+  margin: 10px;
 }
 
 
