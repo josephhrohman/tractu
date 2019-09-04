@@ -75,17 +75,50 @@ nav {
 
 /* Header */
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  opacity: 0.8;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
+  background: url(imgs/labwork.jpg) beige;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-block {
+  animation: fade-in-move-up 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  height: 300px;
+  width: 600px;
+}
+
+@keyframes fade-in-move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .header-blurb {
-  width: 50vw;
-  margin-left: 20vw;
   font-size: 3em;
   font-weight: 900;
   color: white;
 }
 
 .header-content {
-  width: 30vw;
-  margin-left: 20vw;
   font-size: 1.8em;
   font-weight: 900;
   color: white;
@@ -96,48 +129,27 @@ nav {
 main {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  opacity: 0.8;
-  height: 80vh;
-  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.3);
-  background: url(imgs/labwork.jpg) beige;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.contact-info {
-  border: 10px solid rgba(255, 255, 255, 0.5);
+.main-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 300px;
-  width: 700px;
-  margin: 20px auto;
+  height: 60vh;
+  width: 100vw;
+  background-color: white;
 }
 
-.contact-title {
-  font-size: 1.8em;
-  font-weight: 900;
-  color: white;
+.main-title {
+  font-size: 2em;
+  margin: 5vh 0 0 20vw;
 }
 
-.contact-email {
-  font-size: 1.8em;
-  font-weight: 900;
-  color: white;
+.main-blurb {
+  font-size: 1em;
+  margin-left: 20vw;
 }
 
-.contact-number {
-  font-size: 1.8em;
-  font-weight: 900;
-  color: white;
-}
-
-.form-group{
+/* .form-group{
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -185,9 +197,7 @@ main {
   height: 20px;
   width: 80px;
   margin: 10px;
-}
-
-
+} */
 
 /* Footer */
 

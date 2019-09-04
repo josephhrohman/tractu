@@ -79,7 +79,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 60vh;
+  height: 85vh;
   opacity: 0.8;
   box-shadow: inset 0 0 0 100vw rgba(0,0,0,.25);
   background: url(imgs/doctor.jpg) beige;
@@ -90,6 +90,7 @@ header {
 }
 
 .header-block {
+  animation: fade-in-move-up 1s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +98,17 @@ header {
   border: 10px solid rgba(255, 255, 255, 0.5);
   height: 300px;
   width: 600px;
+}
+
+@keyframes fade-in-move-up {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header-blurb {
